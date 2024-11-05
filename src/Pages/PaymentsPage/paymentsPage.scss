@@ -1,0 +1,53 @@
+@use '../../colors';
+
+.payments-layout {
+	justify-content: space-between;
+	height: 100vh;
+
+	.main {
+		overflow-y: scroll;
+	}
+	.payments-page {
+		.button__primary {
+			width: 95px;
+		}
+
+		.form {
+			&__actions {
+				flex-direction: column;
+			}
+
+			.calculate-result {
+				border: 1px solid colors.$primary-light;
+				padding: 0.9rem 1.3rem;
+				border-radius: 8px;
+
+				.amount,
+				.due-date {
+					span {
+						color: colors.$primary-light;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.payments-layout {
+		justify-content: start;
+		.sidebarContainer {
+			height: 100vh;
+		}
+		.payments-page {
+			.form {
+				width: 50%;
+				margin: 0 auto;
+			}
+		}
+		.sidebar {
+			position: static;
+		}
+	}
+}

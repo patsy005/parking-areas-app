@@ -1,0 +1,34 @@
+@use '../../colors';
+
+.parking-areas {
+	&__actions {
+		display: flex;
+		flex-direction: column;
+		gap: 1.1rem;
+
+		p {
+			font-size: 1.4rem;
+		}
+	}
+
+	&__select-box {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.parking-areas {
+		&__actions {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&__select-box {
+			flex-direction: row;
+			align-items: center;
+			width: 40%;
+		}
+	}
+}

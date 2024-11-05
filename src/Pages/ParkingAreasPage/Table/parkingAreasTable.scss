@@ -1,0 +1,163 @@
+@use '../../../colors';
+
+.parking-areas {
+	.table {
+		background: colors.$grey-100 !important;
+		--bs-table-bg: transparent;
+		--bs-table-hover-bg: #ececec;
+		margin-bottom: 1.5rem !important;
+
+		&__header {
+			padding: 0.8rem 0;
+			color: colors.$grey-500;
+			font-size: 1.4rem;
+			font-weight: 400;
+
+			&:last-of-type {
+				text-align: right;
+			}
+		}
+
+		&__cell {
+			padding: 0.8rem 0.4rem 0.8rem 0;
+
+			&:last-of-type {
+				vertical-align: middle;
+				padding: 0.8rem 0;
+			}
+		}
+
+		tbody {
+			tr {
+				&:hover {
+					.table__cell {
+						background-color: #ececec !important;
+					}
+				}
+			}
+
+			.border-bottom:last-of-type {
+				border-bottom: none !important;
+				border-bottom-width: 0 !important;
+				border-color: transparent !important;
+			}
+		}
+	}
+	.parking-areas-table {
+		&__name {
+			font-weight: 500;
+			font-size: 1.4rem;
+			color: colors.$grey-900;
+		}
+		
+		&__name-small {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6rem;
+			color: colors.$grey-900;
+		}
+		&__discount-small {
+			p {
+				color: colors.$grey-500;
+				font-size: 1.3rem;
+				font-weight: 300;
+			}
+
+			span {
+				color: colors.$grey-900;
+				font-size: 1.4rem;
+				font-weight: 700;
+			}
+		}
+
+		&__rate {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6rem;
+
+			p {
+				color: colors.$grey-500;
+				font-size: 1.4rem;
+				font-weight: 300;
+			}
+
+			span {
+				color: colors.$primary;
+				font-size: 1.6rem;
+				font-weight: 300;
+			}
+		}
+
+		&__actions {
+			display: flex;
+			justify-content: end;
+			gap: 1.1rem;
+
+			&--btn {
+				padding: 0.5rem;
+				height: 38px;
+				width: 41px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+
+	.pagination-btns {
+		gap: 2rem;
+
+		&__next-prev {
+			&--btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 0.4rem;
+			}
+
+			&--next {
+				svg {
+					transform: rotate(-90deg);
+				}
+			}
+
+			&--prev {
+				svg {
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+
+	.pagination-row {
+		display: flex;
+		flex-direction: column;
+		gap: 1.9rem;
+		margin-bottom: 1.9rem;
+
+		.pagination-num-results {
+			display: flex;
+			gap: 1rem;
+			align-items: center;
+			.select {
+				width: auto;
+				flex: none;
+
+				&__control {
+					gap: 0.5rem;
+					padding: 0.5rem 0.9rem;
+				}
+			}
+		}
+
+		.pagination-page-count {
+			text-align: end;
+			font-size: 1.3rem;
+
+			&__current-page {
+				color: colors.$primary;
+				font-weight: 500;
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+@use '../../colors';
+
+.button {
+	border-radius: 8px;
+	padding: 0.9rem 1.3rem;
+	font-family: inherit;
+	font-size: 1.4rem;
+	font-weight: 600;
+
+	&__primary {
+		background-color: colors.$primary;
+		color: colors.$white;
+		border: none;
+		transition: background-color 0.3s ease-in-out;
+
+		&:hover,
+		&:focus {
+			background-color: colors.$primary-light;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__secondary {
+		border: 1px solid colors.$primary;
+		color: colors.$grey-900;
+		background: transparent;
+		transition: all 0.3s ease-in-out;
+
+		svg {
+			path {
+				transition: fill 0.3s ease-in-out;
+			}
+		}
+
+		&:hover {
+			background-color: colors.$primary;
+			color: colors.$white;
+
+			svg {
+				path {
+					fill: colors.$white;
+				}
+			}
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:disabled {
+			background-color: colors.$grey-300;
+			color: colors.$grey-500;
+			border-color: colors.$grey-300;
+			cursor: not-allowed;
+
+			svg {
+				path {
+					fill: colors.$grey-500;
+				}
+			}
+		}
+	}
+
+	&__danger {
+		background-color: colors.$error;
+		border: none;
+		color: colors.$white;
+		transition: opacity 0.3s ease-in-out;
+		width: 72px;
+
+		&:hover {
+			opacity: 0.9;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.form {
+	.button__primary {
+		width: 62px;
+	}
+}

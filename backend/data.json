@@ -1,0 +1,316 @@
+{
+	"parkingAreas": [
+		{
+			"id": 1,
+			"name": "Central Park Garage",
+			"hourlyRate": {
+				"weekdays": 2.0,
+				"weekends": 3.0
+			},
+			"discount": 3
+		},
+		{
+			"id": 2,
+			"name": "Downtown Lot",
+			"hourlyRate": {
+				"weekdays": 1.5,
+				"weekends": 2.5
+			},
+			"discount": 5
+		},
+		{
+			"id": 3,
+			"name": "Riverside Parking",
+			"hourlyRate": {
+				"weekdays": 1.75,
+				"weekends": 2.75
+			},
+			"discount": 2
+		},
+		{
+			"id": 4,
+			"name": "Uptown Garage",
+			"hourlyRate": {
+				"weekdays": 1.25,
+				"weekends": 2.25
+			},
+			"discount": 0
+		},
+		{
+			"id": 5,
+			"name": "East Side Lot",
+			"hourlyRate": {
+				"weekdays": 1.0,
+				"weekends": 2.0
+			},
+			"discount": 7
+		},
+		{
+			"id": 6,
+			"name": "West Park Plaza",
+			"hourlyRate": {
+				"weekdays": 2.5,
+				"weekends": 3.5
+			},
+			"discount": 4
+		},
+		{
+			"id": 7,
+			"name": "City Center",
+			"hourlyRate": {
+				"weekdays": 2.75,
+				"weekends": 3.75
+			},
+			"discount": 1
+		},
+		{
+			"id": 8,
+			"name": "North Garage",
+			"hourlyRate": {
+				"weekdays": 2.25,
+				"weekends": 3.25
+			},
+			"discount": 6
+		},
+		{
+			"id": 9,
+			"name": "South Lot",
+			"hourlyRate": {
+				"weekdays": 1.75,
+				"weekends": 2.75
+			},
+			"discount": 8
+		},
+		{
+			"id": 10,
+			"name": "Harbor View Parking",
+			"hourlyRate": {
+				"weekdays": 1.5,
+				"weekends": 2.5
+			},
+			"discount": 9
+		},
+		{
+			"id": 11,
+			"name": "Metro Center Garage",
+			"hourlyRate": {
+				"weekdays": 2.0,
+				"weekends": 3.0
+			},
+			"discount": 10
+		},
+		{
+			"id": 12,
+			"name": "River Plaza",
+			"hourlyRate": {
+				"weekdays": 2.25,
+				"weekends": 3.25
+			},
+			"discount": 4
+		},
+		{
+			"id": 13,
+			"name": "Green Street Lot",
+			"hourlyRate": {
+				"weekdays": 2.5,
+				"weekends": 3.5
+			},
+			"discount": 5
+		},
+		{
+			"id": 14,
+			"name": "Bay Area Garage",
+			"hourlyRate": {
+				"weekdays": 1.75,
+				"weekends": 2.75
+			},
+			"discount": 4
+		},
+		{
+			"id": 15,
+			"name": "Market Square Lot",
+			"hourlyRate": {
+				"weekdays": 1.5,
+				"weekends": 2.5
+			},
+			"discount": 4
+		},
+		{
+			"id": 16,
+			"name": "Sunset Garage",
+			"hourlyRate": {
+				"weekdays": 1.25,
+				"weekends": 2.25
+			},
+			"discount": 4
+		},
+		{
+			"id": 17,
+			"name": "Boulevard Plaza",
+			"hourlyRate": {
+				"weekdays": 1.0,
+				"weekends": 2.0
+			},
+			"discount": 0
+		},
+		{
+			"id": 18,
+			"name": "Maple Lot",
+			"hourlyRate": {
+				"weekdays": 2.75,
+				"weekends": 3.75
+			},
+			"discount": 0
+		},
+		{
+			"id": 19,
+			"name": "The Loop Garage",
+			"hourlyRate": {
+				"weekdays": 2.25,
+				"weekends": 3.25
+			},
+			"discount": 2
+		},
+		{
+			"id": 20,
+			"name": "Central Plaza",
+			"hourlyRate": {
+				"weekdays": 2.5,
+				"weekends": 3.5
+			},
+			"discount": 4
+		},
+		{
+			"id": 21,
+			"name": "Victory Lot",
+			"hourlyRate": {
+				"weekdays": 1.75,
+				"weekends": 2.75
+			},
+			"discount": 4
+		},
+		{
+			"id": 22,
+			"name": "Pacific Heights Garage",
+			"hourlyRate": {
+				"weekdays": 1.5,
+				"weekends": 2.5
+			},
+			"discount": 4
+		},
+		{
+			"id": 23,
+			"name": "Oceanview Parking",
+			"hourlyRate": {
+				"weekdays": 1.25,
+				"weekends": 2.25
+			},
+			"discount": 4
+		},
+		{
+			"id": 24,
+			"name": "Bridge Plaza",
+			"hourlyRate": {
+				"weekdays": 1.0,
+				"weekends": 2.0
+			},
+			"discount": 4
+		},
+		{
+			"id": 25,
+			"name": "Grand Avenue Lot",
+			"hourlyRate": {
+				"weekdays": 2.75,
+				"weekends": 3.75
+			},
+			"discount": 4
+		},
+		{
+			"id": 26,
+			"name": "Seaside Garage",
+			"hourlyRate": {
+				"weekdays": 2.25,
+				"weekends": 3.25
+			},
+			"discount": 4
+		},
+		{
+			"id": 27,
+			"name": "Hilltop Lot",
+			"hourlyRate": {
+				"weekdays": 2.5,
+				"weekends": 3.5
+			},
+			"discount": 4
+		},
+		{
+			"id": 28,
+			"name": "Highland Parking",
+			"hourlyRate": {
+				"weekdays": 1.75,
+				"weekends": 2.75
+			},
+			"discount": 4
+		},
+		{
+			"id": 29,
+			"name": "Central Hub",
+			"hourlyRate": {
+				"weekdays": 1.5,
+				"weekends": 2.5
+			},
+			"discount": 4
+		},
+		{
+			"id": 30,
+			"name": "Broadway Lot",
+			"hourlyRate": {
+				"weekdays": 1.25,
+				"weekends": 2.25
+			},
+			"discount": 4
+		}
+	],
+	"discounts": [
+		{
+			"id": 1,
+			"name": "Holiday Discount",
+			"percentage": 10,
+			"from": "20-12-2024",
+			"to": "31-12-2024",
+			"parkingAreas": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+		},
+		{
+			"id": 2,
+			"name": "Summer Discount",
+			"percentage": 8,
+			"from": "01-06-2024",
+			"to": "31-08-2024",
+			"parkingAreas": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+		},
+		{
+			"id": 3,
+			"name": "Winter Discount",
+			"percentage": 5,
+			"from": "01-12-2024",
+			"to": "19-02-2025",
+			"parkingAreas": [21, 22, 23, 24, 25]
+		},
+		{
+			"id": 4,
+			"name": "Spring Discount",
+			"percentage": 2,
+			"from": "01-03-2024",
+			"to": "31-05-2024",
+			"parkingAreas": [26, 27, 28, 29, 30]
+		},
+		{
+			"id": 5,
+			"name": "Fall Discount",
+			"percentage": 3,
+			"from": "20-09-2024",
+			"to": "30-11-2024",
+			"parkingAreas": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 18, 21, 23, 24, 27, 30]
+		}
+	]
+}

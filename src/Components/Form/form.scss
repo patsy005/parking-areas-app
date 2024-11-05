@@ -1,0 +1,69 @@
+@use '../../colors';
+
+.form {
+	color: colors.$grey-900;
+
+	.container-box {
+		background-color: colors.$white;
+	}
+
+	&__title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: colors.$grey-900;
+	}
+
+	&__exit-button {
+		border: none;
+		background: transparent;
+
+		svg {
+			path {
+				transition: fill 0.3s ease-in-out;
+			}
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			svg {
+				path {
+					fill: colors.$primary-light;
+				}
+			}
+		}
+	}
+
+	&__inputs {
+		display: flex;
+		flex-direction: column;
+		gap: 2.2rem;
+	}
+
+	.label {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+	&__input-box {
+		display: flex;
+		flex-direction: column;
+		gap: 1.1rem;
+	}
+
+	&__actions {
+		display: flex;
+		gap: 2rem;
+		justify-content: end;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.form {
+		&__title {
+			font-size: 3rem;
+		}
+	}
+}

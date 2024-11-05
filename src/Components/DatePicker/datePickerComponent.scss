@@ -1,0 +1,86 @@
+@use '../../colors';
+
+.date-picker {
+	display: flex;
+	justify-content: space-between;
+	transition: border-color 0.3s ease-in-out;
+
+	&:hover {
+		&:last-child {
+			svg {
+				path {
+					fill: colors.$primary-light;
+				}
+			}
+		}
+	}
+
+	&__input {
+		width: 100%;
+	}
+}
+
+.react-datepicker {
+	&__input-container {
+		justify-content: space-between;
+
+		input {
+			color: colors.$grey-900 !important;
+			width: 100%;
+
+			&:focus {
+				outline: none;
+				caret-color: colors.$primary-light;
+			}
+		}
+	}
+
+	&__navigation {
+		&:hover {
+			.react-datepicker__navigation-icon {
+				&::before {
+					border-color: colors.$primary-light !important;
+				}
+			}
+		}
+	}
+
+	&__header {
+		background-color: colors.$grey-100 !important;
+	}
+
+	&__current-month,
+	&__day-names {
+		color: colors.$grey-900;
+	}
+
+	&__day {
+		&--today {
+			background-color: colors.$grey-300;
+		}
+	}
+
+	&__day--keyboard-selected:not([aria-disabled='true']):hover {
+		background-color: colors.$grey-300;
+	}
+
+	&__day--selected {
+		background-color: colors.$primary-light;
+		font-weight: 600;
+	}
+
+	&__time-container {
+		font-family: inherit;
+		color: colors.$grey-900;
+		font-size: 1.3rem;
+	}
+}
+
+.react-datepicker__time-container
+	.react-datepicker__time
+	.react-datepicker__time-box
+	ul.react-datepicker__time-list
+	li.react-datepicker__time-list-item--selected {
+	background-color: colors.$primary-light;
+	font-weight: 600;
+}

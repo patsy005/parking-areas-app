@@ -1,0 +1,18 @@
+.confirmation-prompt {
+	.form__title {
+		font-size: 1.9rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.confirmation-prompt {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.confirmation-prompt {
+		width: 50%;
+		margin: 0 auto;
+	}
+}

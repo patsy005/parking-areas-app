@@ -1,0 +1,56 @@
+@use '../../colors';
+
+.select {
+	flex: 2;
+	&__control {
+		background: transparent !important;
+
+		&--is-focused,
+		&--menu-is-open {
+			border-color: unset !important;
+			box-shadow: unset !important;
+			border: 1px solid colors.$primary-light !important;
+		}
+
+		&--menu-is-open {
+			.select__dropdown-indicator {
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		&:hover {
+			border-color: colors.$primary-light !important;
+		}
+	}
+
+	&__option {
+		&:hover,
+		&--is-focused {
+			background-color: colors.$grey-300 !important;
+			color: colors.$grey-900 !important;
+		}
+
+		&--is-selected {
+			background-color: colors.$primary-light !important;
+			color: colors.$white !important;
+		}
+	}
+
+	&__value-container,
+	&__input-container,
+	&__dropdown-indicator {
+		padding: 0 !important;
+	}
+
+	&__input-container,
+	&__single-value {
+		margin: 0 !important;
+		color: colors.$grey-900 !important;
+	}
+
+	&__indicator-separator {
+		display: none;
+	}
+}

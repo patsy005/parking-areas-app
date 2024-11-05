@@ -1,0 +1,89 @@
+@use '../../colors';
+
+.sidebar {
+	background-color: colors.$grey-900;
+	border-radius: 8px 8px 0 0;
+	position: sticky;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		gap: 5rem;
+	}
+
+	&__link {
+		padding: 1rem;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: colors.$grey-100;
+		font-size: 1.6rem;
+		font-weight: 500;
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+		align-items: center;
+
+		span {
+			opacity: 0.8;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		svg {
+			height: 23px;
+			width: 23px;
+		}
+
+		&:hover {
+			span {
+				opacity: 1;
+			}
+		}
+
+		&.active {
+			background: colors.$light-gradient;
+			color: colors.$grey-900;
+
+			span {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.sidebar {
+		position: static;
+		height: 100%;
+		width: auto;
+		left: unset;
+		bottom: unset;
+		border-radius: 0 8px 8px 0;
+
+		&__list {
+			padding-top: 4.4rem;
+			flex-direction: column !important;
+			gap: 2.3rem;
+		}
+
+		&__link {
+			flex-direction: row !important;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.sidebarContainer {
+		width: auto !important;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.sidebar {
+		height: 100vh;
+	}
+}
