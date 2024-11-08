@@ -23,8 +23,6 @@ The application has two main views:
 
 ### Tech stack
 
-Frontend:
-
 - React.js (Vite, React Router)
 - TypeScript
 - React Hook Form
